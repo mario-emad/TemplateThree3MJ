@@ -566,6 +566,164 @@ ul {
 
 /* End Gallery */
 
+/* Start Feature */
+
+.feature {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    position: relative;
+    background-color: white;
+}
+
+.feature .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.feature .container .box {
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.feature .container .box .img-holder {
+    position: relative;
+    overflow: hidden;
+}
+
+.feature .container .box .img-holder::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 100%;
+    height: 100%;
+}
+
+.feature .container .box .img-holder::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-style: solid;
+    border-width: 0px 0px 150px 650px;
+    border-color: transparent transparent white transparent;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.feature .container .box:hover .img-holder:after {
+    border-width: 0px 650px 150px 0px;
+    border-color: transparent transparent white transparent;
+}
+
+.feature .container .box .img-holder img {
+    max-width: 100%;
+}
+
+.feature .container .box h2 {
+    position: relative;
+    font-size: 40px;
+    margin: auto;
+    width: fit-content;
+    padding-bottom: 20px;
+}
+
+.feature .container .box h2::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    width: calc(100% - 30px);
+    height: 5px;
+}
+
+.feature .container .box p {
+    line-height: 2;
+    font-size: 20px;
+    margin: 30px 0;
+    padding: 25px;
+    color: #777;
+}
+
+.feature .container .box a {
+    display: block;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 0 auto 30px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: var(--main-transition);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.feature .container .box.quality .img-holder::before {
+    background-color: rgb(244 64 54 / 60%);
+}
+
+.feature .container .box.quality h2::after {
+    background-color: #f44036;
+}
+
+.feature .container .box.quality a {
+    border-color: #f44036;
+    color: #f44036;
+    background: linear-gradient(to right, #f44036 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+.feature .container .box.time .img-holder::before {
+    background-color: rgb(0 150 136 / 60%);
+}
+
+.feature .container .box.time h2::after {
+    background-color: #009688;
+}
+
+.feature .container .box.time a {
+    border-color: #009688;
+    color: #009688;
+    background: linear-gradient(to right, #009688 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+.feature .container .box.passion .img-holder::before {
+    background-color: rgb(3 169 244 / 60%);
+}
+
+.feature .container .box.passion h2::after {
+    background-color: #03a9f4;
+}
+
+.feature .container .box.passion a {
+    border-color: #03a9f4;
+    color: #03a9f4;
+    background: linear-gradient(to right, #03a9f4 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+.feature .container .box a:hover {
+    color: white;
+    background-position: left bottom;
+}
+
+/* End Feature */
+
 /* Start Animation */
 
 @keyframes up-and-down {
