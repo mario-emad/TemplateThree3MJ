@@ -1198,6 +1198,225 @@ ul {
 
 /* End Work Steps */
 
+/* Start Events */
+
+.events {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    position: relative;
+}
+
+.events .dots {
+    background-image: url("../images/dots.png");
+    height: 186px;
+    width: 204px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.events .dots-up {
+    top: 200px;
+    right: 0;
+}
+
+.events .dots-down {
+    bottom: 200px;
+    left: 0;
+}
+
+.events .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.events .container img {
+    max-width: 50%;
+}
+
+@media (max-width: 991px) {
+    .events .container img {
+        display: none;
+    }
+}
+
+.events .container .info {
+    flex: 1;
+}
+
+.events .container .info .time {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+.events .container .info .time .unit {
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    text-align: center;
+    width: 75px;
+    transition: var(--main-transition);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.events .container .info .time .unit span {
+    display: block;
+}
+
+.events .container .info .time .unit span:first-child {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 50px 0;
+    color: var(--main-color);
+}
+
+.events .container .info .time .unit span:last-child {
+    padding: 10px 0;
+    font-size: 12px;
+    border-top: 1px solid #d4d4d4;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.events .container .info .time .unit:hover,
+.events .container .info .time .unit:hover span:last-child {
+    border-color: var(--main-color);
+}
+
+.events .container .info .title {
+    text-align: center;
+    margin: 40px 0 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.events .container .info .description {
+    text-align: center;
+    line-height: 1.7;
+    color: #777;
+}
+
+.events .container .subscribe {
+    width: 100%;
+    margin-top: 50px;
+}
+
+@media (max-width: 991px) {
+    .events .container .subscribe {
+        margin-top: 20px;
+    }
+}
+
+.events .container .subscribe form {
+    max-width: 50%;
+    margin: 20px auto;
+    padding: 30px 40px;
+    background-color: #f6f5f5;
+    border-radius: 50px;
+    display: flex;
+    gap: 20px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+@media (max-width: 991px) {
+    .events .container .subscribe form {
+        max-width: 100%;
+        padding: 30px 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+        flex-direction: column;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+}
+
+.events .container .subscribe form input {
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    caret-color: var(--main-color);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.events .container .subscribe form input[type="email"] {
+    flex: 1;
+}
+
+@media (max-width: 991px) {
+    .events .container .subscribe form input[type="email"] {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+}
+
+.events .container .subscribe form input[type="email"]:focus {
+    outline: none;
+}
+
+.events .container .subscribe form input[type="email"]::placeholder {
+    transition: opacity var(--main-transition);
+    -webkit-transition: opacity var(--main-transition);
+    -moz-transition: opacity var(--main-transition);
+    -ms-transition: opacity var(--main-transition);
+    -o-transition: opacity var(--main-transition);
+}
+
+.events .container .subscribe form input[type="email"]:focus::placeholder {
+    opacity: 0;
+}
+
+.events .container .subscribe form input[type="submit"] {
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+@media (max-width: 991px) {
+    .events .container .subscribe form input[type="submit"] {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+}
+
+.events .container .subscribe form input[type="submit"]:hover {
+    background-color: var(--main-color-alt);
+}
+
+/* End Events */
+
 /* Start Animation */
 
 @keyframes up-and-down {
