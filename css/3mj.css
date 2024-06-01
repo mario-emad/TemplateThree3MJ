@@ -1214,6 +1214,12 @@ ul {
     position: absolute;
 }
 
+@media (max-width: 1199px) {
+    .events .dots {
+        display: none;
+    }
+}
+
 .events .dots-up {
     top: 200px;
     right: 0;
@@ -1432,6 +1438,12 @@ ul {
     width: 204px;
     background-repeat: no-repeat;
     position: absolute;
+}
+
+@media (max-width: 1199px) {
+    .pricing .dots {
+        display: none;
+    }
 }
 
 .pricing .dots-up {
